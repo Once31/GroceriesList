@@ -8,7 +8,7 @@ import { useState } from "react";
 
 function App() {
   const [items, setItems] = useState(
-    JSON.parse(localStorage.getItem("shoppinglist"))
+    JSON.parse(localStorage.getItem("shoppinglist")) || []
   ); // default state
 
   const [newItem, setNewItem] = useState("");
